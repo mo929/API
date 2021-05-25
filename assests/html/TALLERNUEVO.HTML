@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>CLIENTES</title>
+</head>
+
+<body>
+    <h1>CLIENTES</h1>
+    <div class="container">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header"><b>SUPER CLIENTES</b> </div>
+            <div class="card-body text-success" id="nombre"></div>
+        </div>
+        <input type="reset" class="btn btn-primary" id="boton" onclick="maximo();" value="CLIENTES">
+        <input type="button" class="btn btn-primary" id="boton" onclick="total();" value="TOTAL CLIENTES">
+        <input type="button" class="btn btn-primary" id="boton" onclick="minimo();" value="NULO">
+        <input type="button" class="btn btn-primary" id="boton" onclick="organizar_clientes();" value="ORDEN"><br>
+        <br>
+        <div>
+        <form>
+            <input type="text" class="form-control" id="nombres" aria-describedby="emailHelp">
+            <button type="button" class="btn btn-primary" id="boton" onclick="capturar();">AGREGAR</button><br>
+        </form>
+    </div>
+        <br>
+        <table class="base" id="datos">
+            <tr>
+                <th>NOMBRE CLIENTES</th>
+            </tr>
+            <tr>
+                <tbody>
+                    <td></td>
+                </tbody>
+            </tr>
+        </table>
+        </div>
+        <script src="../js/sweetalert2@10.js"></script>
+        <script src="../js/TALLERNUEVO.JS"></script>
+
+</body>
+
+</html>
